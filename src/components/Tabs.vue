@@ -1,9 +1,9 @@
 <template>
   <div class="tabs">
     <h1 class="tabs__heading">{{ data.mainHeading }}</h1>
-    <button class="tabs__buttons" 
+    <button class="tabs__button" 
     v-for="(tab, index) in data.tabs" :key="`tab${index}`"
-    :class="{'tabs__buttons--active': activeTab === index}"
+    :class="{'tabs__button--active': activeTab === index}"
     @click="setActiveTab(index)">{{ tab.tabName }}</button>
     
     <div class="tabs-content" 
@@ -55,7 +55,7 @@ export default {
     margin: 60px 0 30px;  
   }
 
-  &__buttons {
+  &__button {
     background: none;
     color: $pink;
     border: none;
