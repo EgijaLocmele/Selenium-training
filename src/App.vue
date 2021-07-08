@@ -1,30 +1,26 @@
 <template>
-  <tabs :data="data"/>
+  <img alt="Vue logo" src="./assets/logo.png">
+  <HelloWorld msg="Welcome to Your Vue.js App"/>
 </template>
 
 <script>
-import data from "./data/data.json";
-import Tabs from "./components/Tabs.vue";
+import HelloWorld from './components/HelloWorld.vue'
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
-    Tabs
-  },
-  data() {
-    return {
-      data
-    };
+    HelloWorld
   }
-};
+}
 </script>
 
-<style lang="scss">
-body {
-  margin: 0;
-  cursor: default;
-  overflow-x: hidden;
-  background-color: $darkRed;
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
 }
 </style>
